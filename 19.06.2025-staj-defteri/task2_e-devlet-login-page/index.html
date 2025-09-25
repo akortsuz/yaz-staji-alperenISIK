@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Login</title>
+    <meta name="keyword" content="Pythom, Java, JavaScript" />
+    <meta name="description" content="Alperen Işık - Eğitim" />
+
+    <link rel="stylesheet" href="./main1.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--  <link rel="stylesheet" media="(max-width:500px)" href="css/mobile_task1.css"> -->
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; width: 100%;">
+    <div class="container" style="height: 100%; width: 100%;" >
+      <div class="card">
+        <!-- <div class="header">
+            <img src="./image/edk-logo.png" alt="logo">
+            <h1>e-Devlet Kapısı</h1>
+            <p>Kimlik Doğrulama Sistemi</p>
+        </div> -->
+        <header class="header">
+          <div>
+            <img
+              src="./image/edk-logo.png"
+              alt="logo"
+              aria-hidden="true"
+              width="256"
+              height="67"
+            />
+          </div>
+          <div class="write">
+            <img src="./image/1.png" alt="gov" />
+            <p style="margin-top: 0;">
+              <strong>e-Devlet Kapısı </strong><br />
+              <span>https://www.turkiye.gov.tr</span>
+            </p>
+          </div>
+        </header>
+
+        <div class="tab-buttons">
+          <button>e-Devlet Şifresi</button>
+          <button>Mobil İmza</button>
+          <button>Elektronik İmza</button>
+          <!-- <button>Diğer Yöntemler</button> -->
+          <div class="dropdown">
+            <button class="dropdown-toggle" style="padding-top: 10px;">Diğer Yöntemler▾</button>
+            <div class="dropdown-menu">
+              <a href="#">T.C. Kimlik Kartı</a>
+              <a href="#">İnternet Bankacılığı</a>
+              <a href="#">Z-Anahtar</a>
+            </div>
+          </div>
+        </div>
+        <!-- Giriş Formu kısmı için -->
+        <form>
+          <p style="font-size: 14px; color: #30363A; font-size: 0.9rem; height: 42px; width: 674px; line-height: 1.4rem; margin-top: 0px; margin: 0 0 16px;">
+            T.C. Kimlik Numaranızı ve e-Devlet Şifrenizi kullanarak kimliğiniz
+            doğrulandıktan sonra işleminize kaldığınız yerden devam
+            edebilirsiniz. <strong> <a href="#" style="color: #006fc0; text-decoration: none"
+              >e-Devlet Şifresi Nedir, Nasıl Alınır?</a
+            ></strong>
+           
+          </p>
+
+          <div class="flex-column" >
+            <!-- T.C. Kimlik No -->
+            <div>
+              <div class="form-row">
+                <label for="tc">* T.C. Kimlik No</label>
+                <div class="input-group">
+                  <input type="text" id="tc" placeholder="T.C. Kimlik No" 
+                  style="height: 25px;"/>
+                  <i class="fa fa-eye" style="right: 45px;"  id="toggleTc"></i>
+                  <i class="fa fa-keyboard"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- e-Devlet Şifresi -->
+            <div class="form-row">
+              <label for="sifre">* e-Devlet Şifresi</label>
+              <div class="input-group">
+                <input
+                  type="password"
+                  id="sifre"
+                  placeholder="e-Devlet Şifresi"
+                  style="height:25px ;"
+                />
+                <i class="fa fa-keyboard"></i>
+                          <p
+            style="
+              
+              color: #6c757d;
+              flex: 1;
+              flex-direction: row;
+              position:absolute;
+              display: inline-block;
+              top: 2.5rem;
+              left: 5px;
+              right: 30px;
+              font-size: 14px;
+              cursor: text;
+            "
+          >
+            *e-Devlet
+            <strong><em style="color: #0071bc;">şifrenizi unutmanız durumunda</em></strong> doğruladığınız cep
+            telefonunuzdan yenileme işlemi yapabilirsiniz.
+              </p>
+              
+              </div>
+              
+            </div>
+                      <div style="text-align: right">
+            <a
+              href="#"
+              style="
+                color: #006fc0;
+                text-decoration: underline;
+                font-weight: bold;
+                display:inline;
+                top: 3rem;
+                position: relative;
+              "
+              >Şifremi Unuttum</a
+            >
+          </div>
+          </div>
+
+
+
+
+
+          <div class="form-actions">
+            <button type="button" class="cancel">İptal</button>
+            <button type="submit">Giriş Yap</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+     <footer class="footer-fixed" role="contentinfo">
+      <span class="copyright">
+        <img src="https://cdn.e-devlet.gov.tr/themes/nevsehir/images/DDO-logo.png" class="footer-logo" alt="T.C. Cumhurbaşkanlığı Dijital Dönüşüm Ofisi Başkanlığı" height="24px">
+        <img src="https://cdn.e-devlet.gov.tr/themes/ankara/images/edk_logo/turksatlogo.png" class="footer-logo" alt="Türksat" style="height: 16px; margin-bottom: 5px;">
+        
+        © 2025, Ankara - Tüm Hakları Saklıdır
+      </span>
+      
+      <ul style="border-left: 1px solid #ccc;">
+
+    <br><br>
+      <li>
+        <a id="gizlilik_btn" href="javascript:void(0)">Gizlilik ve Güvenlik</a>
+      </li>
+      <br><br><br><br><br><br><br>
+
+      <li>
+        <a href="https://www.turkiye.gov.tr/iletisim?hizli=CozumMerkezi2" target="_blank">Hızlı Çözüm Merkezi</a>
+      </li>
+      
+      </ul
+    </footer>
+</div>
+  </body>
+
+     
+</html>

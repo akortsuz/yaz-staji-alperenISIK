@@ -1,0 +1,382 @@
+*{
+  font-family: "Arimo", sans-serif;
+  font-size: "14.4px";
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(140deg, #fff 0, #e8eaeb 86%);
+  font-family: "Arimo", sans-serif;
+  font-size: 14.4px;
+  
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*  padding: 0 0 .5rem; */
+  /* padding-bottom: 1rem; */
+  /* border-bottom: 1px solid #ccc; */
+}
+
+.container {
+  border-top: 1px solid #ddd;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  padding: 1.2rem 2rem;
+  border-radius: 8px;
+  width: 700px;
+  height: 570px;
+  margin: 1.5rem 0.6rem;
+  box-shadow: rgba(0, 0, 0, .25) 0 25px 50px -12px;
+  /* min-height: calc(100vh - 3.625rem); */
+  
+}
+
+button{
+    box-shadow: 0.125rem 0.25rem 0.5rem rgba(0, 0, 0, 0.201);
+    
+}
+
+.tab-buttons button {
+  margin: 0.2rem;
+  border: solid #ddd 1px;
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: 2.5rem;
+  color: #6A6A6A;
+  font-size: 13.6px;
+  font-weight: 600;
+  
+}
+
+.tab-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+  width: 100%;
+  height: 5rem;
+  border-bottom: 2px solid #EEE;
+  
+  
+}
+
+button:hover {
+  color: #3194cf;
+
+  box-shadow: 0.225rem 0.45rem 0.7rem rgba(0, 0, 0, 0.201);
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  width: auto;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+  /* cursor: pointer; */
+  
+}
+
+.input-group input {
+  /* flex: 1;
+  justify-items: first baseline;
+  padding: 10px 40px 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  cursor: text; */
+
+      background-color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    padding: 10px 10px;
+    border: 1px solid #a5a9b1;
+    width: 100%;
+    height: 2.8125rem;
+    display: inline-block;
+    vertical-align: bottom;
+    border-radius: .5rem;
+  
+}
+
+.input-group i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+  padding-top: 5px;
+  width: 680px;
+  height: auto;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  position: relative;
+  height: 3rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+button[type="submit"] {
+  background: linear-gradient(120deg, #338ad6 0, #045ead 80%);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 320px;
+  
+}
+
+button[type="submit"]:focus, button[type="submit"]:hover {
+  color: #fff;
+  background: linear-gradient(140deg, #338ad6 30%, #045ead 70%);
+  
+}
+
+.cancel {
+  background: linear-gradient(120deg, #f4f4f4 0, #d6d6d6 100%);
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+  border: solid 1px #ccc;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 125px;
+  color: #6A6A6A;
+}
+.cancel:hover {
+    background: linear-gradient(120deg, #eee 0, #d1d1d1 100%);
+    color: black;
+}
+
+.cancel:focus-within {
+  background: #c2c2c2;
+}
+
+.write {
+  color: #000;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.write span {
+  color: #4a4a4a;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-toggle {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: default;
+  align-items: center;
+  
+}
+
+/* Menü varsayılan olarak gizli */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 152px;
+  min-height: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  text-align: center;
+  margin: 4px;
+
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Hover ile menüyü göster */
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+  /* border-bottom: solid 1px #ccc; */
+  font-size: small;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+  color: #3194cf;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #ccc; /* zaten form'da vardı */
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 100%;
+  color: #4a4a4a;
+}
+
+.form-row label {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+footer{
+    display: block;
+}
+.footer-fixed {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    height: 3.625rem;
+    background: #fff;
+    padding: 1.25rem 0;
+    border-top: 1px solid #EEE;
+    text-align: center;
+    margin-top: 1.4rem;
+    
+    
+}
+.copyright {
+    color: #5f6b73;
+    font-size: .8rem;
+    margin-right: .9rem;
+}
+img {
+    vertical-align: middle;
+}
+.footer-fixed .footer-logo {
+    height: 24px;
+    width: auto;
+    margin-right: 15px;
+    display: inline-block;
+    
+}
+
+a{
+    color: #4a4a4a;
+    text-decoration: none;
+}
+.footer-fixed ul {
+    padding: 0;
+    margin: 0;
+    display: ruby;
+    border-left: 1px solid #CCC;
+    padding-left: 5px;
+    list-style: none;
+    font-size: small;
+    
+}
+
+li a strong:hover{
+    color: #3194cf;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}

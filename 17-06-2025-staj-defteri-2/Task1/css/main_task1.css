@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+/* İkisini eşit böl */
+.container > div {
+  flex: 1;
+  height: 100%;
+  min-width: 300px;
+}
+
+/* Sol taraf - login kutusu ortalanmış */
+.login-side {
+  background-color: #f0edde;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-right: 2px solid #ccc; */ /* Ortadaki çizgi */
+}
+
+/* Sağ taraf */
+.info-side {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../image/login_background.jpg"); /* Görselin yolu */
+    background-size: cover;             /* Görsel div'i tam kaplasın */
+    background-position: center;        /* Ortalansın */
+    background-repeat: no-repeat;       /* Tekrarlanmasın */
+}
+
+/* Login kutusu */
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+.login-box button:hover {
+
+    background-color: #0056b3;
+
+}
+
+.image-side{
+    background-image: url("image/login_background.jpg"); /* Görselin yolu */
+    background-size: cover;             /* Görsel div'i tam kaplasın */
+    background-position: center;        /* Ortalansın */
+    background-repeat: no-repeat;       /* Tekrarlanmasın */
+}
+
+/* Ekran 400px'den küçükse sağ tarafı gizle */
+@media (max-width: 540px) {
+  .info-side, .image-side {
+    display: none;
+  }
+
+  .login-side {
+    flex: 1 1 100%;
+  }
+}
+
